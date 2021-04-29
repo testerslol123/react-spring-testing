@@ -10,9 +10,14 @@ import TrailShow from './components/useTrail';
 import ImageFade from './components/useTransition/ImageFade';
 import ListOrder from './components/useTransition/ListOrdering';
 import MansoryShow from './components/useTransition/Masonry';
+import ParallaxVert from './components/ParallexVert';
+import AnimatingAuto from './components/useSpring/animatingAuto';
+import Springs from './components/Spring';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
+import CommonConfigs from './components/commons/configs';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +27,13 @@ ReactDOM.render(
           <Col>
               <h2 className="ml-5">useChain</h2>
                 <Col><ChainShow /></Col>
+          </Col>
+        </Row>
+        <hr></hr>
+        <Row className="mt-5">
+          <Col>
+            <h2>Animating Auto</h2>
+                <Col><AnimatingAuto /></Col>
           </Col>
         </Row>
         <hr></hr>
@@ -82,12 +94,33 @@ ReactDOM.render(
           </Col>
         </Row>
         <hr></hr>
-        {/* <Row className="mt-5">
+        <h1>Commons</h1>
+        <hr></hr>
+        <Row className="mt-5">
           <Col>
-            <h2>Use Transition ( Notifications )</h2>
-                <Col><NotifShow /></Col>
+            <h2>Common Configs</h2>
+                <Col><CommonConfigs /></Col>
           </Col>
-        </Row> */}
+        </Row>
+        
+        <hr></hr>
+        <h1>RENDER PROPS</h1>
+        <hr></hr>
+        <Row className="mt-5">
+          <Col>
+            <h2>Spring</h2>
+                <Col><Springs /></Col>
+          </Col>
+        </Row>
+        <hr></hr>
+        <Row className="mt-5">
+          <Col>
+            <h2>Parallax Vert</h2>
+                <Col><ParallaxVert /></Col>
+          </Col>
+        </Row>
+        <hr></hr>
+        
       </Container>
     </div>
   </React.StrictMode>,
