@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+// import { Container, Row, Col } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import SpringShow from './components/useSpring';
 import ChainShow from './components/useChain';
@@ -21,108 +23,136 @@ import CommonConfigs from './components/commons/configs';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
-      <Container fluid="md">
-        <Row>
-          <Col>
-              <h2 className="ml-5">useChain</h2>
-                <Col><ChainShow /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Animating Auto</h2>
-                <Col><AnimatingAuto /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5 mb-4">
-          <Col>
-              <h2>Use Spring Card</h2>
-                <Col><SpringShow /></Col>
-          </Col>
-        </Row>
-        
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Spring Flip Card</h2>
-                <Col><FlipCard /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Spring SVG Filter</h2>
-                <Col><SvgFilter /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Springs Draggable List</h2>
-                <Col><DragList /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Trail</h2>
-                <Col><TrailShow /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Transition ( Image Fade )</h2>
-                <Col><ImageFade /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Transition ( List Ordering )</h2>
-                <Col><ListOrder /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Use Transition ( MANSORY )</h2>
-                <Col><MansoryShow /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <h1>Commons</h1>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Common Configs</h2>
-                <Col><CommonConfigs /></Col>
-          </Col>
-        </Row>
-        
-        <hr></hr>
-        <h1>RENDER PROPS</h1>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Spring</h2>
-                <Col><Springs /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        <Row className="mt-5">
-          <Col>
-            <h2>Parallax Vert</h2>
-                <Col><ParallaxVert /></Col>
-          </Col>
-        </Row>
-        <hr></hr>
-        
-      </Container>
-    </div>
+      <div className="container py-3">
+      <div className="col-lg-12">
+        <div className="row mb-3">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Use Chain</h6>
+                    <div className="components"><ChainShow /></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-body">
+                        <h6>Use Spring</h6>
+                        <div className="components"><SpringShow /></div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div className="row mb-3">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Animating Auto</h6>
+                    <div className="components"><AnimatingAuto /></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-body">
+                        <h6>Use Spring Flip Card</h6>
+                        <div className="components"><FlipCard /></div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div className="row mb-3">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Use Spring SVG Filter</h6>
+                    <div className="components"><SvgFilter /></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-body">
+                        <h6>Use Spring Draggable List</h6>
+                        <div className="components"><DragList /></div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div className="row mb-3">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Use Trail</h6>
+                    <div className="components"><TrailShow /></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-body">
+                        <h6>Use Transition Image Fade</h6>
+                        <div className="components"><ImageFade /></div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div className="row mb-3">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Use Transition List Ordering</h6>
+                    <div className="components"><ListOrder /></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-body">
+                        <h6>Use Transition MANSORY</h6>
+                        <div className="components"><MansoryShow /></div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div className="row mb-3">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Common Configs</h6>
+                    <div className="components"><CommonConfigs /></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                    <div className="card">
+                      <div className="card-body">
+                        <h6>Render Props (Spring)</h6>
+                        <div className="components"><Springs /></div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div className="row">
+              <div className="col-md-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6>Render Props Parallax Vert</h6>
+                    <div className="components"><ParallaxVert /></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+      
   </React.StrictMode>,
   document.getElementById('root')
 );
